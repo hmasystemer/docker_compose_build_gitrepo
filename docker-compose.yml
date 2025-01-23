@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   webapp:
-    build: https://github.com/hmasystemer/docker_compose_build_gitrepo.git # Git repo link
+    build: 
+     context: https://github.com/hmasystemer/docker_compose_build_gitrepo.git # Git repo link
     ports:
       - "8080:80"  # Map host port 8080 to container port 80
     volumes:
